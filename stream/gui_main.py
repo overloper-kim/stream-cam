@@ -1,13 +1,5 @@
 import sys
 import threading
-import gi
-gi.require_version('Gst', '1.0')
-gi.require_version('GstRtspServer', '1.0')
-from gi.repository import Gst, GLib
-from PyQt5.QtWidgets import (
-    QApplication, QWidget, QPushButton, QToolTip, QGridLayout, QLabel,
-    QLineEdit, QComboBox, QMessageBox,
-)
 from PyQt5.QtGui import QFont
 import socket
 import glob

@@ -1,8 +1,8 @@
 import sys
 from PyQt5.QtWidgets import QApplication
-
-from gui import scan_devices, GUI
+from gui import GUI
 from streamer import Streamer
+from device import scan_devices
 
 def main():
   app = QApplication(sys.argv)
@@ -25,7 +25,6 @@ def main():
   gui.set_devices(scan_devices())
   gui.show()
   sys.exit(app.exec())
-  
   
 if __name__ == "__main__":
   main()
